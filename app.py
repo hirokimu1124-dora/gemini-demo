@@ -25,7 +25,7 @@ except Exception as e:
     st.stop()
 
 # --- モデルの選択 ---
-# model_name = "gemini-1.5-flash" # 最新の軽量モデル
+# model_name = "gemini-1.5-pro-latest" # 最新の軽量モデル
 model_name = "gemini-pro"
 model = genai.GenerativeModel(model_name)
 
@@ -67,4 +67,5 @@ if prompt:
 
         except Exception as e:
             st.error(f"エラーが発生しました: {e}")
+
 
